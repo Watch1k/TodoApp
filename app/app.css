@@ -1,0 +1,29 @@
+.input-field .btn.right {
+  margin-left: 3rem; }
+
+.card-panel {
+  margin: 0;
+  padding-bottom: 14px;
+  transition: all 0.3s; }
+  .card-panel.done {
+    background-color: #e0f2f1 !important;
+    transition: all 0.3s; }
+  .card-panel .row {
+    margin-bottom: 0; }
+  .card-panel .col:nth-child(2) {
+    line-height: 23px; }
+  .card-panel .col:nth-child(3) .btn {
+    padding: 0;
+    width: 41px;
+    background-color: #ee6e73; }
+    .card-panel .col:nth-child(3) .btn:hover {
+      background-color: #e94047; }
+  .card-panel .col:nth-child(3) .material-icons {
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 0; }
+
+.done {
+  text-decoration: line-through; }
+
+/*# sourceMappingURL=app.css.map */

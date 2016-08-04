@@ -1,0 +1,30 @@
+<div class="row">
+  <nav>
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="index.html" class="brand-logo">{{ $ctrl.title }}</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="row">
+  <form>
+    <div class="container">
+      <div class="file-field input-field">
+        <button type="button" class="waves-effect waves-light btn right"
+                ng-click="$ctrl.addTask(); focusOnSaveInput();">Add
+        </button>
+        <div class="file-path-wrapper">
+          <i class="material-icons prefix active">mode_edit</i>
+          <input id="icon_prefix2" type="text" class="validate" ng-model="$ctrl.task"
+                 ng-keyup="($event.which === 13)?$ctrl.addTask():0"
+                 input-focus-function="focusOnSaveInput">
+          <label for="icon_prefix2">Enter new task</label>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<todo-list list="$ctrl.list"></todo-list>
